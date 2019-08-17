@@ -23,7 +23,7 @@ import java.util.List;
 
 @Component
 public class PostProcessor implements PageProcessor {
-   private String url="https://stackoverflow.com/questions/tagged/android?tab=votes&page=238&pagesize=15";
+   private String url="https://stackoverflow.com/questions/tagged/android";
     @Override
     public void process(Page page) {
         //获取解析页面的所有链接    (id为# class为.)
@@ -114,22 +114,6 @@ public class PostProcessor implements PageProcessor {
 //                .setDownloader(httpClientDownloader)   //设置下载器
                 .run();
         {
-
-//            while(L->next!=null){
-//                if(L->next->data==x){
-//                    L->next=L->next->next;
-//                }
-//                else{
-//                    L=L->next;
-//                }
-//            }
-            /**
-             * 首先第一点：如果没有Lnode *q=L,那么else 那里的q=q->next这里会报错
-             * 第二点：方法传入的是一个地址，对地址进行的操作会改变原来地址中存放的数据。
-             * 例如L=L->next会导致链表的长度缩短，这也就是为什么需要引入中间变量来存储这一地址
-             * 第三点：如果你认为这里delete方法中删除数据的操作对原来的链表没有改变的话，那么这个操作没有任何意义
-             * 因为这里的删除操作就是要在原来链表的基础上进行操作。
-             */
         }
     }
 }
